@@ -1,0 +1,10 @@
+version: "1.0-alpha.1"
+name: andycitest
+
+services:
+
+  ci:
+    type: webservice
+    image: oamdev/testapp:v1
+    name: ci
+    
