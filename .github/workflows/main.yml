@@ -8,8 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run vela
-        uses: szihai/vela-git-action@v0.3-alpha
+        uses: szihai/vela-git-action@v0.4-alpha
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBECONFIG }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         with:
           args: vela.yaml
