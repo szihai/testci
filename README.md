@@ -28,4 +28,4 @@ merge your change, and it will trigger the github action.
 
 The workflow is under `.github/workflows/main.yml`. It fairly straightforward: Download the vela binary, and run `vela up` command.
 
-The building and deploying instructions are all in the `vela.yaml` Appfile. In this demo, it builds an image and deploys the application to your K8s cluster. 
+The building and deploying instructions are all in the `vela.yaml` Appfile. In this demo, it builds an image and deploys the application to your K8s cluster just like a Docker Compose file. 
